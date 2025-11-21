@@ -21,13 +21,19 @@ export class filaCircular {
     modificarTamanho():void{
         this.tamanho=this.fila.length;
     }
+    primeiroElemento():number|null{
+        if(this.verificarSeVazia()){
+            return null;
+        }
+        return this.fila[0];
+    }
     adicionarElemento(elemento: number): void {
         if (this.verificarSeCheia()) {
             console.log("A fila está cheia. Não é possível adicionar mais elementos.");
         }else{
             this.fila.push(elemento);
             this.frente=this.fila[this.tamanho-1];
-            this.modificarTamanho()
+            this.modificarTamanho();
             
         }
     }
@@ -37,9 +43,10 @@ export class filaCircular {
             return null;
         }else{
             let elementoDeTras=this.tras;
-
+            this.fila.shift();
+            this.modificarTamanho();
+            this.tras=this.fila[this.tamanho-1];
             return elementoDeTras;
-            
         }
     }
 
