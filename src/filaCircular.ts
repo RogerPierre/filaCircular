@@ -1,9 +1,9 @@
-export class filaCircular {
-    capacidade: number; 
-    fila: number[];
-    frente: number|null
-    tras: number|null;
-    tamanho: number;
+export class FilaCircular {
+    private capacidade: number; 
+    private fila: number[];
+    private frente: number|null
+    private tras: number|null;
+    private tamanho: number;
     //*/ Método construtor para inicializar a fila circular
     constructor(capacidade: number) {
         this.capacidade = capacidade;
