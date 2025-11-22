@@ -47,7 +47,11 @@ export class FilaCircular {
     }
 // Exibir os elementos da fila.
     exibirFila(){
-        return this.fila;
+         {
+            for(let element of this.fila){
+                return element +", "
+            }
+        }
     }
     // Retornar o elemento que está no início da fila .
     retornarElementoInicial():number|string{

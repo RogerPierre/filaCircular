@@ -11,7 +11,7 @@ export class Ui{
 // Exibir quantos elementos ainda podem ser inseridos na fila.
     startloop(lista:FilaCircular){
         while(true){
-            let resposta : number = Number(prompt(`Lista: ${lista.exibirFila()} \nFreeLoots(1)\n add(2)\nremove(3)\nfront(4)\nempty?(5)\nfull?(6)\nnumElements(7)\nelements(8)\ncapacite(9)\n`))
+            let resposta : number = Number(prompt(`Lista: [${lista.exibirFila()}]\nSaber quantos espaços faltam.(1)\nAdicionar Elemento a lista?(2)\nRemover ultimo Elemento da lista?\nMostrar primeiro alemento da lista(4)\nVerificar se Está vazio?(5)\nVerificar se esta cheio?(6)\nMostrar quantidade de elementos.(7)\nVerificar elementos.(8)\nMostrar capacidade maxima?(9)\n`))
             switch(resposta){
                 case 1:
                     alert(lista.retornarQuantosEspacosFaltam())
