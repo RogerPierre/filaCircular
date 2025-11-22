@@ -11,38 +11,39 @@ export class Ui{
 // Exibir quantos elementos ainda podem ser inseridos na fila.
     startloop(lista:FilaCircular){
         while(true){
-            let reposta : number = Number(prompt(`Lista: ${lista.exibirFila()} \n add(1)\nremove(2)\nfront(3)\nempty?(4)\nfull?(5)\nnumElements(6)\nelements(7)\ncapacite(8)\nFreeLoots(0)`))
-            switch(reposta){
-                case 0:
+            let resposta : number = Number(prompt(`Lista: ${lista.exibirFila()} \nFreeLoots(1)\n add(2)\nremove(3)\nfront(4)\nempty?(5)\nfull?(6)\nnumElements(7)\nelements(8)\ncapacite(9)\n`))
+            switch(resposta){
+                case 1:
                     alert(lista.retornarQuantosEspacosFaltam())
                     break
-                case 1:
+                case 2:
                     alert(lista.adicionarElemento(Number(prompt("qual Elemento deseja adicionar."))))
                     break
-                case 2:
+                case 3:
                     alert(lista.removerElemento())
                     break
-                case 3:
+                case 4:
                     alert(lista.retornarElementoInicial())
                     break
-                case 4:
+                case 5:
                     alert(lista.verificarSeVazia())
                     break
-                case 5:
+                case 6:
                     alert(lista.verificarSeCheia())
                     break
-                case 6:
+                case 7:
                     alert(lista.mostrarTamanho())
                     break
-                case 7:
+                case 8:
                     alert(lista.exibirFila())
                     break
-                case 8:
+                case 9:
                     alert(lista.mostrarCapacidade())
                     break
-                case reposta:
+                case resposta:
                     alert("Responda algo valido.")
                     break
+
                 
             }
         }
