@@ -1,6 +1,8 @@
 # 📌 Fila Circular em TypeScript
 
-Este repositório apresenta a implementação de uma **classe de Fila Circular (FilaCircular)** desenvolvida em TypeScript como atividade prática.  
+Este repositório apresenta a implementação de uma **classe de Fila Circular (FilaCircular)** desenvolvida em TypeScript por Roger Pierre da turma
+de Analise e Desenvolvimento de Sistemas(ADS) da intituição federal do piaui(IFPI) no ano de 2025 como atividade prática na disciplina de 
+Estrutura de Dados I.  
 O objetivo é demonstrar o uso de estruturas de dados, controle de capacidade e manipulação de elementos seguindo o modelo FIFO.
 
 ---
@@ -63,10 +65,9 @@ A classe implementa os seguintes métodos principais:
 
 ```bash
 # 1. Instale o TypeScript (se ainda não tiver)
-npm install -g typescript
+npm install typescript parcel --save-dev
 
-# 2. Compile o arquivo .ts
-tsc nome-do-arquivo.ts
+# 2. Compile com o parcel
+npm start
 
-# 3. Execute o arquivo gerado (.js)
-node nome-do-arquivo.js
+# 3. no navegador pesquisar o URL: http://localhost:1234
